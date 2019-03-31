@@ -9,10 +9,10 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
-#engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 # Because I could not connect to SQLite on my MAC I used MYSQL
-engine = create_engine("mysql://root:games4fun@localhost/hawaii")
+#engine = create_engine("mysql://root@localhost/hawaii")
 
 # reflect an existing database into a new model
 Base = automap_base()
