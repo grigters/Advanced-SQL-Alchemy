@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, func
 
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
-# Because I could not connect to SQLite on my MAC I used MYSQL
+# Also tested connecting to MYSQL
 #engine = create_engine("mysql://root@localhost/hawaii")
 
 # reflect an existing database into a new model
